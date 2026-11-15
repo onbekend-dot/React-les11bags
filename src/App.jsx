@@ -1,8 +1,9 @@
 import './App.css'
 
 
-
+import  ProductCard  from './components/ProductCard.jsx';
 import { useState } from "react";
+import Tegel from "./components/Tegels.jsx";
 function App() {
 
 
@@ -83,37 +84,88 @@ function App() {
                 </ul>
             </nav>
 
+
             <main className="main">
-               <article className="cards">
-                <div className="card">
-                    <span>Best seller</span>
-                    <img src={"src/assets/bag_1.png"} alt="bag"/>
-                    <h3>the handy bag</h3>
-                    <h4>€400,-</h4>
+                 <ProductCard
+                              span="Best seller"
+                              image= "src/assets/bag_1.png"
+                              description= "the handy bag"
+                              price={ 250}
 
-                </div>
-                   <div className="card">
-                    <span h3>Best seller</span>
-                    <img src={"src/assets/bag_2.png"} alt="bag"/>
-                       <h3>the stylish bag</h3>
-                       <h4>€250,-</h4>
+                 />
+                <ProductCard
+                             span="Best seller"
+                             image= "src/assets/bag_2.png"
+                             description= "the stylish bag"
+                             price= { 300}
+                    />
+                <ProductCard
+                             span="Best seller"
+                             image= "src/assets/bag_3.png"
+                             description= "the simple bag"
+                             price={  300}
+                    />
+                <ProductCard
+                             span="Best seller"
+                             image= "src/assets/bag_4.png"
+                             description= "the trendy bag"
+                             price={ 150}
+                        />
 
-                </div>
-                   <div className="card">
-                    <span>Best seller</span>
-                    <img src={"src/assets/bag_3.png"} alt="bag"/>
-                       <h3>the simple bag</h3>
-                       <h4>€300,-</h4>
-
-                </div>
-                <card className="the trendy bag">
-                    <span>Best seller</span>
-                    <img src={"src/assets/bag_4.png"} alt="bag"/>
-                    <h3>the trendy bag</h3>
-                    <h4>€150,-</h4>
-                </card>
-               </article>
             </main>
+            <footer>
+                <article className="tegel-container">
+                    <Tegel className="brand-text"
+                        description="the brand"
+                        content=
+                              {  <>
+
+                            <p> orem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                               do eiusmod tempor incididunt ut
+                                et dolore magna. </p>
+
+
+                            <p> Aliqua. Ut enim ad minim veniam,
+                               quis nostrud exercitation
+                             ullamco laboris nisi ut aliquip
+                                ex ea commodo consequat.</p>
+                            </>  }
+
+/>
+
+                          <Tegel className="brand-afbeelding"
+                          image="src/assets/brand.png"  />
+
+                           <Tegel className="story-afbeelding"
+                           image="src/assets/our_story.png" />
+
+                    <Tegel className="story-text"
+                        description="our story"
+                        content=
+                               { <>
+
+                               <p> orem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut </p>
+
+
+                         <p>Aliqua  labore et dolore magna  Ut
+                             enim ad minim veniam, quis nostrud
+                             exercitatio   ullamco laboris nisi
+                             ut aliquip ex ea commodo consequat. </p>
+                               </> }
+                        />
+                </article>
+            </footer>
+
+
+
+
+
+
+
+
 
 
 
