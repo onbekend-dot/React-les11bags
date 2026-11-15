@@ -1,8 +1,9 @@
 import './App.css'
 
 
-
+import  ProductCard  from './components/ProductCard.jsx';
 import { useState } from "react";
+import Tegel from "./components/Tegels.jsx";
 function App() {
 
 
@@ -83,37 +84,68 @@ function App() {
                 </ul>
             </nav>
 
+
             <main className="main">
-               <article className="cards">
-                <div className="card">
-                    <span>Best seller</span>
-                    <img src={"src/assets/bag_1.png"} alt="bag"/>
-                    <h3>the handy bag</h3>
-                    <h4>€400,-</h4>
+                 <ProductCard
+                              span="Best seller"
+                              image= "src/assets/bag_1.png"
+                              description= "the handy bag"
+                              price={ 250}
 
-                </div>
-                   <div className="card">
-                    <span h3>Best seller</span>
-                    <img src={"src/assets/bag_2.png"} alt="bag"/>
-                       <h3>the stylish bag</h3>
-                       <h4>€250,-</h4>
+                 />
+                <ProductCard
+                             span="Best seller"
+                             image= "src/assets/bag_2.png"
+                             description= "the stylish bag"
+                             price= { 300}
+                    />
+                <ProductCard
+                             span="Best seller"
+                             image= "src/assets/bag_3.png"
+                             description= "the simple bag"
+                             price={  300}
+                    />
+                <ProductCard
+                             span="Best seller"
+                             image= "src/assets/bag_4.png"
+                             description= "the trendy bag"
+                             price={ 150}
+                        />
 
-                </div>
-                   <div className="card">
-                    <span>Best seller</span>
-                    <img src={"src/assets/bag_3.png"} alt="bag"/>
-                       <h3>the simple bag</h3>
-                       <h4>€300,-</h4>
-
-                </div>
-                <card className="the trendy bag">
-                    <span>Best seller</span>
-                    <img src={"src/assets/bag_4.png"} alt="bag"/>
-                    <h3>the trendy bag</h3>
-                    <h4>€150,-</h4>
-                </card>
-               </article>
             </main>
+            <footer>
+                <article className="tegel-container">
+                    <Tegel
+                        description="the brand"
+                        content= "orem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        />
+
+                    <Tegel
+                        image="src/assets/brand.png"
+                        />
+                    <Tegel
+                        image="src/assets/our_story.png"
+                        />
+                    <Tegel
+                        description="our story"
+                        content="orem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        />
+                </article>
+            </footer>
+
+
+
+
+
+
+
+
 
 
 

@@ -6,7 +6,7 @@ main {
 .nav-button ul {
   list-style: none;
 }
-footer {
+.footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -62,7 +62,7 @@ nav ul {
   border-color: #D08169;
   color: #D08169;
 }
-.cards {
+.main card {
   display: flex;
   flex-direction: row;
   gap: 56px;
@@ -77,7 +77,7 @@ nav ul {
 
 }
 
-.card span  {
+.card  {
   position: absolute;
   top: 0;
   left: 0;
@@ -89,5 +89,34 @@ nav ul {
 
 .main h4 {
   color: #BC4C2A;
+  font-weight: inherit;
   font-size: 48px;
+  font-family: "Lucida Sans Typewriter", "Lucida Sans Typewriter", "Lucida Sans Typewriter", Verdana, sans-serif;
+}
+.main {
+  color: #BC4C2A;
+  font-weight: inherit;
+  font-size: 18px;
+  margin-left: 0;
+  margin-top: 30px;
+
+}
+
+.footer,
+.tegel-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.tegel-container,
+.description {
+  margin-top: 290px;
+
+}
+.tegel-container,
+.content {
+  margin-bottom: 20px;
+ }
+.tegel-container img {
+  margin-top: -190px;
+
 }
