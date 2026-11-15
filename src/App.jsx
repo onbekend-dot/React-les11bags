@@ -115,26 +115,46 @@ function App() {
             </main>
             <footer>
                 <article className="tegel-container">
-                    <Tegel
+                    <Tegel className="brand-text"
                         description="the brand"
-                        content= "orem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                        />
+                        content=
+                              {  <>
 
-                    <Tegel
-                        image="src/assets/brand.png"
-                        />
-                    <Tegel
-                        image="src/assets/our_story.png"
-                        />
-                    <Tegel
+                            <p> orem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                               do eiusmod tempor incididunt ut
+                                et dolore magna. </p>
+
+
+                            <p> Aliqua. Ut enim ad minim veniam,
+                               quis nostrud exercitation
+                             ullamco laboris nisi ut aliquip
+                                ex ea commodo consequat.</p>
+                            </>  }
+
+/>
+
+                          <Tegel className="brand-afbeelding"
+                          image="src/assets/brand.png"  />
+
+                           <Tegel className="story-afbeelding"
+                           image="src/assets/our_story.png" />
+
+                    <Tegel className="story-text"
                         description="our story"
-                        content="orem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        content=
+                               { <>
+
+                               <p> orem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut </p>
+
+
+                         <p>Aliqua  labore et dolore magna  Ut
+                             enim ad minim veniam, quis nostrud
+                             exercitatio   ullamco laboris nisi
+                             ut aliquip ex ea commodo consequat. </p>
+                               </> }
                         />
                 </article>
             </footer>

@@ -6,11 +6,6 @@ main {
 .nav-button ul {
   list-style: none;
 }
-.footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
 
 section {
   background-color: #F6F3EF;
@@ -102,21 +97,32 @@ nav ul {
 
 }
 
-.footer,
+
 .tegel-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 .tegel-container,
-.description {
-  margin-top: 290px;
+.brand-afbeelding {
+  margin-top: 100px;
+}
+
+.brand-text,
+.story-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.brand-text h2,
+.story-text h2 {
+  line-height: 0.7;
 
 }
-.tegel-container,
-.content {
-  margin-bottom: 20px;
- }
-.tegel-container img {
-  margin-top: -190px;
-
+.brand-text,
+.story-text{
+  word-spacing: 0.01rem;
+  line-height: 1.6;
 }
